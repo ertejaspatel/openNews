@@ -3,7 +3,7 @@
    <h2>
      <%= link_to link.title, link_path(link) %><br>
      <small class="author">
-      Submitted <%= time_ago_in_words(link.created_at)%> ago by <%= link.user.email if link.user %>
+      Submitted <%= time_ago_in_words(link.created_at)%> ago by <%= link.user.name if link.user %>
      </small>
    </h2>
 
